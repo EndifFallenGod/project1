@@ -89,7 +89,6 @@
 }
 
 @media screen and (max-width: 768px) {
-
   .right-sidebar {
     padding: 6.2857rem 0rem 0rem 3.5rem;
     max-width: 32.8571rem;
@@ -104,11 +103,11 @@
     max-width: 24.6667rem;
   }
 
-
   .left-sidebar__subtitle {
     max-width: 24.6667rem;
     padding: 0rem;
   }
+
   .left-sidebar {
     padding-left: 0.8333rem;
   }
@@ -118,5 +117,9 @@
   }
   .nums img {
     max-width: 5rem;
+  }
+
+  .left-sidebar .note {
+    left: 2%;
   }
 }
