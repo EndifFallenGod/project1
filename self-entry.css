@@ -245,8 +245,13 @@
     align-items: center;
   }
 
+  .self-entry__left-content {
+    max-width: 80%;
+  }
+
   .self-entry__list {
     margin-left: 3rem;
+    max-width: 80%;
   }
 
   .self-entry__item {
