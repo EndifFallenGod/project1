@@ -1,0 +1,178 @@
+.achievements {
+  width: 100%;
+  padding-bottom: 3.1875rem;
+  padding-top: 4.6rem;
+}
+
+.achievements__title {
+  margin-bottom: 7rem;
+  width: 40%;
+}
+
+.bookmark {
+  position: absolute;
+  top: -7%;
+  left: 3%;
+  background: url(./img/achievements/Group.svg) repeat-y;
+  max-width: 97px;
+  width: 100%;
+  min-height: 40px;
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.section-logo {
+  background: url(./img/achievements/h_m.svg) no-repeat;
+  min-width: 20%;
+  height: 60px;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.achievements .container .achievements__content {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3.3rem 5rem 2rem 6.3rem;
+  margin-bottom: 48px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  background-color: #fff;
+}
+
+.article-title {
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.article-text {
+  line-height: 24px;
+  width: 85%;
+  margin-bottom: 4.2rem;
+}
+
+.statistics {
+  display: flex;
+  justify-content: space-between;
+}
+
+.statistics__left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  flex-wrap: wrap;
+}
+
+.statistics__right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  flex-wrap: wrap;
+}
+
+.marker {
+  background: url(./img/achievements/marker.svg) no-repeat;
+  height: 34px;
+  min-width: 34px;
+  margin-right: 1rem;
+}
+
+.statistics__number {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+.statistics-text {
+  font-weight: 500;
+  max-width: 30%;
+  margin-right: 2rem;
+}
+
+.package {
+  position: absolute;
+  z-index: -1000;
+  top: -13%;
+  left: 59%;
+}
+
+.slidebar {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 72px;
+}
+
+.slidebar__option {
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: #000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slidebar__option:focus {
+  outline: 2px solid #fdbf0f;
+  background-color: #fdbf0f;
+}
+
+@media screen and (max-width: 768px) {
+  .achievements__title {
+    width: 100%;
+  }
+
+  .bookmark {
+    display: none;
+  }
+
+  .achievements .container .achievements__content {
+    padding: 1.7rem 1rem 1.5rem 1rem;
+  }
+
+  .statistics__number {
+    font-size: 2rem;
+  }
+
+  .article-text {
+    width: 100%;
+  }
+
+  .container {
+    padding: 2.2rem 1rem 1rem 1.5rem;
+  }
+
+  .package {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .achievements__title {
+    width: 100%;
+  }
+
+  .section-logo {
+    display: none;
+  }
+
+  .marker {
+    display: none;
+  }
+
+  .section-title {
+    width: 100%;
+  }
+
+  .achievements__title {
+    margin-bottom: 3rem;
+  }
+}
