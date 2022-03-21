@@ -4,7 +4,7 @@
   min-height: 45rem;
   background-color: #7224ea;
   padding-top: 4.375rem;
-  z-index: 1000;
+  z-index: 500;
   overflow-x: hidden;
 }
 .content {

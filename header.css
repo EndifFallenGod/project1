@@ -126,6 +126,7 @@
   position: relative;
   cursor: pointer;
   transition: 0.5s;
+  z-index: 800;
 }
 
 
@@ -209,7 +210,104 @@
   z-index: 0;
 }
 
+#burger , [for=burger]{
+  display: none;
+}
+
+@keyframes show{
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
 @media screen and (max-width: 768px) {
+
+  [for=burger]{
+    z-index: 700;
+    position: fixed;
+    display: block;
+    font-size: 40px;
+    right: 2rem;
+    top: 3rem;
+  }
+
+  .nav{
+    z-index: 699;
+    display: none;
+    position: fixed;
+    background: #ffff;
+    top: 2rem;
+    left: 0.5rem;
+    right: 0.5rem;
+    border-radius: 25px;
+    border: 1px solid #000;
+  }
+
+  .nav__logo{
+    padding-left: 0.5rem;
+  }
+
+  #burger:checked + label + nav{
+    display: block;
+    animation: show .5s ease;
+
+  }
+
+  .additional__content {
+  
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+
+  .number {
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: "Roboto";
+    margin-bottom: 0.5rem;
+    margin-right: 0;
+  }
+  
+  .addres {
+    display: flex;
+    align-items: center;
+    font-size: 0.875rem;
+    font-weight: 400;
+    font-family: "Roboto";
+    margin-right: 0;
+  }
+
+  .additional__content {
+    z-index: 500;
+ 
+  }
+
+  .additional--header{
+    justify-content: center;
+  }
+
+  .nav__elements {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .nav__link {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-right: 0;
+    text-transform: uppercase;
+    padding: 1rem;
+    width: 100%;
+  }
+
   .main__girl {
     display: none;
   }
@@ -228,31 +326,9 @@
     justify-content: space-around;
   }
 
-  .nav__elements {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 0.75rem;
-    flex-wrap: wrap;
-  }
-
-  .nav__link {
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin-right: 0;
-    text-transform: uppercase;
-    padding: 1rem;
-  }
-
   .wrapper {
     display: flex;
     justify-content: center;
-  }
-
-  .additional__content {
-    align-items: flex-start;
-    justify-content: space-around;
-    margin-bottom: 2rem;
-    flex-wrap: wrap;
   }
 
   .additional__elem {

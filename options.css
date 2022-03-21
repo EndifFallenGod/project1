@@ -93,6 +93,12 @@
     padding: 6.2857rem 0rem 0rem 3.5rem;
     max-width: 32.8571rem;
   }
+
+  .left-sidebar img {
+    max-width: 24.6667rem;
+    padding-right: 3rem;
+    
+  }
   .nums img {
     max-width: 5.7143rem;
   }

@@ -1,11 +1,11 @@
 @font-face {
-  font-family: "icons";
-  src: url("font/icons.eot?41217393");
-  src: url("font/icons.eot?41217393#iefix") format("embedded-opentype"),
-    url("font/icons.woff2?41217393") format("woff2"),
-    url("font/icons.woff?41217393") format("woff"),
-    url("font/icons.ttf?41217393") format("truetype"),
-    url("font/icons.svg?41217393#icons") format("svg");
+  font-family: 'icons';
+  src: url('../font/icons.eot?84736061');
+  src: url('../font/icons.eot?84736061#iefix') format('embedded-opentype'),
+       url('../font/icons.woff2?84736061') format('woff2'),
+       url('../font/icons.woff?84736061') format('woff'),
+       url('../font/icons.ttf?84736061') format('truetype'),
+       url('../font/icons.svg?84736061#icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,12 +15,11 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'icons';
-    src: url('../font/icons.svg?41217393#icons') format('svg');
+    src: url('../font/icons.svg?84736061#icons') format('svg');
   }
 }
 */
-[class^="icon-"]:before,
-[class*=" icon-"]:before {
+[class^="icon-"]:before, [class*=" icon-"]:before {
   font-family: "icons";
   font-style: normal;
   font-weight: normal;
@@ -29,7 +28,7 @@
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
-  margin-right: 0.2em;
+  margin-right: .2em;
   text-align: center;
   /* opacity: .8; */
 
@@ -42,7 +41,7 @@
 
   /* Animation center compensation - margins should be symmetric */
   /* remove if not needed */
-  margin-left: 0.2em;
+  margin-left: .2em;
 
   /* you can be more comfortable with increased icons size */
   /* font-size: 120%; */
@@ -100,3 +99,5 @@
 .icon-calc:before {
   content: "\e80a";
 } /* '' */
+
+.icon-menu:before { content: '\f0c9'; margin: 0;} /* '' */
